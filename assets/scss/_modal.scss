@@ -1,0 +1,290 @@
+.open {
+    display: block !important;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .8);
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+
+    span {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        padding: 15px;
+        font-size: 40px;
+        cursor: pointer;
+        transition: all .5s ease;
+
+        @media (max-width: 440px) {
+            right: 10px;
+        }
+
+        &:hover {
+            color: #DE3535;
+        }
+    }
+    &__container {
+        position: relative;
+        margin: 0 auto;
+        width: 50%;
+        height: 700px;
+        border-radius: 10px;
+        background-color: rgba($color: #ffffff, $alpha: 1);
+
+        @media (max-width: 440px) {
+            width: 90%;
+            height: 800px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 2em;
+            color: #fff;
+
+            @media (max-width: 440px) {
+                line-height: 1.5em;
+                font-size: 35px;
+            }
+
+            &-black {
+                color: #000;
+            }
+        }
+        .accept {
+            display: flex;
+
+            .acceptance {
+                width: 50px;
+                margin-right: 10px;
+            }
+        }
+        .text-accept {
+            padding-block: 15px;
+            line-height: 1.5em;
+            font-size: 18px;
+        }
+    }
+
+    #feedback-page{
+        text-align:center;
+    }
+    
+    #form-main{
+        width:100%;
+        float:left;
+        padding-top:0px;
+    }
+    
+    #form-div {
+        // background-color:rgba(72,72,72,0.4);
+        width: 450px;
+        float: left;
+        left: 50%;
+        position: absolute;
+      margin-top:30px;
+        margin-left: -260px;
+    }
+    
+    .feedback-input {
+        color:#3c3c3c;
+        font-family: Helvetica, Arial, sans-serif;
+      font-weight:500;
+        font-size: 18px;
+        border-radius: 0;
+        line-height: 22px;
+        background-color: #fbfbfb;
+        padding: 13px 13px 13px 54px;
+        margin-bottom: 10px;
+        width:100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 2px solid rgba($color: #000000, $alpha: .8);
+    }
+    
+    .feedback-input:focus{
+        background: #fff;
+        box-shadow: 0;
+        border: 3px solid #3498db;
+        color: #3498db;
+        outline: none;
+      padding: 13px 13px 13px 54px;
+    }
+    
+    .focused{
+        color:#30aed6;
+        border:#30aed6 solid 3px;
+    }
+    
+    /* Icons ---------------------------------- */
+    #name{
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    #name:focus{
+        background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+        background-size: 30px 30px;
+        background-position: 8px 5px;
+      background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    #email{
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    #email:focus{
+        background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+        background-size: 30px 30px;
+      background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    #comment{
+        background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+        background-size: 30px 30px;
+        background-position: 11px 8px;
+        background-repeat: no-repeat;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 150px;
+        line-height: 150%;
+        resize:vertical;
+    }
+    
+    input:hover, textarea:hover,
+    input:focus, textarea:focus {
+        background-color:white;
+    }
+    
+    #button-blue{
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        float:left;
+        width: 50%;
+        border-radius: 10px;
+        border: #fbfbfb solid 4px;
+        cursor:pointer;
+        background-color: #20c8ed;
+        color:white;
+        font-size:24px;
+        padding-top:22px;
+        padding-bottom:22px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin-top:-4px;
+        font-weight:700;
+    }
+    #button-reset{
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        float:left;
+        width: 50%;
+        border-radius: 10px;
+        border: #fbfbfb solid 4px;
+        cursor:pointer;
+        background-color: #C0C0C0;
+        color:rgb(0, 0, 0);
+        font-size:24px;
+        padding-top:22px;
+        padding-bottom:22px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      margin-top:-4px;
+      font-weight:700;
+    }
+    #button-reset:hover {
+        background-color: #161616;
+        color: #ffffff;
+    }
+    
+    #button-blue:hover{
+        background-color: #DE3535;
+    }
+        
+
+    .submit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    @media only screen and (max-width: 580px) {
+        #form-div{
+            left: 3%;
+            margin-right: 3%;
+            width: 88%;
+            margin-left: 0;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+    }
+    
+}
+
+.about__modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .8);
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+
+    .about__container {
+        position: relative;
+        padding: 25px;
+        width: 50%;
+        height: 50%;
+        margin: 100px auto;
+        border-radius: 10px;
+        background-color: #fff;
+
+        @media (max-width: 440px) {
+          .title {
+            font-size: 35px;
+          }   
+        }
+
+        @media (max-width: 768px) {
+            width: 80%;
+        }
+    }
+
+    span {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        padding: 15px;
+        font-size: 40px;
+        cursor: pointer;
+        transition: all .5s ease;
+
+        @media (max-width: 440px) {
+            right: 0;
+        }
+
+        &:hover {
+            color: #DE3535;
+        }
+    }
+}

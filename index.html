@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+    <title>Год семьи</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger__label" id="burger-click">
+              <span></span></label>
+
+              <div id="mobile">
+                <a href="#values" class="link link-mobile">Семейные ценности</a>
+                <a href="#events" class="link link-mobile">Мероприятия</a>
+                <a href="#" class="link link-mobile" id="register1">Принять участие</a>
+                <a href="#contacts" class="link link-mobile">Контакты</a>
+              </div>
+
+            <img src="./assets/img/logo.png" alt="logo">
+            <a href="#values" class="link">Семейные ценности</a>
+            <a href="#events" class="link">Мероприятия</a>
+            <a href="#" class="link" id="register2">Принять участие</a>
+            <a href="#contacts" class="link">Контакты</a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="first">
+            <div class="first__container">
+                <div class="swiper swiperBagger">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/img/banner_1.png" alt="banner_1" class="slider-img"></div>
+                        <div class="swiper-slide"><img src="./assets/img/banner_2.png" alt="banner_2" class="slider-img"></div>
+                        <div class="swiper-slide"><img src="./assets/img/banner_3.png" alt="banner_3" class="slider-img"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </section>
+        <section class="second" id="values">
+            <div class="second__container">
+                <h1 class="title">Инициативы Вологодчины</h1>
+                <p class="text">Основные семейные ценности это то, что объединяет всех членов семьи: <strong>любовь</strong>, <strong>уважение</strong>, <strong>доверие</strong>, <strong>взаимность</strong>, <strong>понимание</strong> и <strong>поддержка</strong>. Воспитание этих ценностей у ребёнка начинается в первую очередь в семье, а потом в дошкольном образовательном учреждении. Только в семье рождается понимание образа семьи, семейных традиций и взаимоотношений.</p>
+
+                <div class="card">
+                    <div class="card__container">
+                        <img src="./assets/img/card_1.png" alt="card_1">
+                        <p class="card__title">Любовь</p>
+                        <p class="card__text">Любовь - это то, что связывает нас вместе, делает нас сильнее и помогает в жизни.</p>
+                        <button class="more">Подробнее</button>
+                    </div>
+                    <div class="card__container">
+                        <img src="./assets/img/card_2.png" alt="card_2">
+                        <p class="card__title">Уважение</p>
+                        <p class="card__text">Уважение - это краеугольный камень крепкой семьи. Оно царит везде.</p>
+                        <button class="more">Подробнее</button>
+                    </div>
+                    <div class="card__container">
+                        <img src="./assets/img/card_3.png" alt="card_3">
+                        <p class="card__title">Доверие</p>
+                        <p class="card__text">Доверие - это основа крепких семейных уз. Является нерушимым, основополагающим.</p>
+                        <button class="more">Подробнее</button>
+                    </div>
+                    <div class="card__container">
+                        <img src="./assets/img/card_4.png" alt="card_4">
+                        <p class="card__title">Взаимность</p>
+                        <p class="card__text">Взаимность - это жизненная сила гармоничных семей. Упрочняет их связи.</p>
+                        <button class="more">Подробнее</button>
+                    </div>
+                    <div class="card__container">
+                        <img src="./assets/img/card_5.png" alt="card_5">
+                        <p class="card__title">Понимание</p>
+                        <p class="card__text">Понимание - это мост, соединяющий сердца в семьях. Вносит свой вклад и заботу.</p>
+                        <button class="more">Подробнее</button>
+                    </div>
+                    <div class="card__container">
+                        <img src="./assets/img/card_6.png" alt="card_6">
+                        <p class="card__title">Поддержка</p>
+                        <p class="card__text">Поддержка - это невидимая сила, которая укрепляет семьи.</p>
+                        <button class="more">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third" id="events">
+            <div class="third__container">
+                <h1 class="title">Предстоящие события</h1>
+
+                <div class="event">
+                    <h2 class="event__title">19-27 июня 2024 года</h2>
+                    <img src="./assets/img/event_1.png" alt="event_1">
+                    <h3 class="event__subtitle">ХVI МЕЖДУНАРОДНЫЙ ТЕАТРАЛЬНЫЙ ФЕСТИВАЛЬ «ГОЛОСА ИСТОРИИ»</h3>
+                    <p class="text">С 19 по 27 июня в Вологде состоится ХVI Международный театральный фестиваль «Голоса истории». Фестиваль проходит раз в два года. Это одно из самых ожидаемых культурных событий вологодского лета.</p>
+
+                    <button class="more register" id="register3">Регистрация</button>
+                </div>
+                <div class="event">
+                    <h2 class="event__title">28 июня 2024 года</h2>
+                    <img src="./assets/img/event_2.png" alt="event_2">
+                    <h3 class="event__subtitle">X МЕЖДУНАРОДНЫЙ ФЕСТИВАЛЬ НАРОДНЫХ ПРОМЫСЛОВ И РЕМЕСЕЛ «ГОРОД РЕМЕСЕЛ»</h3>
+                    <p class="text">В период с 27 по 30 июня Вологда примет мастеров народных промыслов со всех регионов России и из стран ближнего зарубежья. В рамках фестиваля традиционно пройдут конкурс мастеров, выставка и деловой форум. «Город ремесел», одно из любимейших мероприятий вологжан, состоится в 10-й раз.</p>
+
+                    <button class="more register" id="register4">Регистрация</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="modal">
+            <div class="modal__container">
+                <span id="modal__close">X</span>
+                <h1 class="title title-black">Заявка на мероприятие</h1>
+                <div id="form-main">
+                    <div id="form-div">
+                      <form class="form" id="form1" action="./mail.php">
+                        
+                        <p class="name">
+                          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Фамилия, Имя, Отчество" id="name" />
+                        </p>
+    
+                        <p class="name">
+                            <input name="date" type="date" class="feedback-input" id="date" />
+                          </p>
+                        
+                        <p class="email">
+                          <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        
+                        <p class="text">
+                          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Комментарий"></textarea>
+                        </p>
+
+                        <div class="accept">
+                            <input type="checkbox" name="acceptance" value="1" class="acceptance" aria-invalid="false">
+                            <p class="text text-accept">Нажимая кнопку "Отправить", я  <a href="#">соглашаюсь</a> на обработку персональных данных.</p>
+                        </div>
+                        
+                        <div class="submit">
+                            <button type="reset" id="button-reset">Очистить</button>
+                          <input type="submit" value="Отправить" id="button-blue"/>
+                        </div>
+                      </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about__modal" id="about__modal">
+        <div class="about__container">
+            <span id="about__close">X</span>
+            <h1 class="title">Подробнее</h1>
+            <p class="text">Контент</p>
+        </div>
+    </div>
+
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="footer__container">
+            <div class="footer__left">
+                <a href="#header" class="footer__link">Вверх</a>    
+                <a href="#values" class="footer__link">Ценности</a>
+                <a href="#events" class="footer__link">Мероприятия</a>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__top">
+                    <a href="#" class="footer__link">г. Вологда, Благовещенская ул., 20</a>
+                    <a href="mailto:centr_remesel35@mail.ru" class="footer__link">centr_remesel35@mail.ru</a>
+                    <a href="tel:+78172339492" class="footer__link">+7 (8172) 33-94-92</a>
+                    <a href="tel:+7888953069" class="footer__link">+7 (888) 95-30-69</a>
+                </div>
+
+                <div class="footer__bottom">
+                    <p class="footer__text">© 2024 г. Все права защищены</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
